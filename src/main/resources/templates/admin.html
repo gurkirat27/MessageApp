@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin</title>
+</head>
+<body>
+<h2>Posted Threads</h2>
+
+
+<table>
+<tr>
+
+<th>Messages</th>
+</tr>
+<tr>
+<tr th:each="s : ${list}">
+
+<td th:text="${s.name}"><br>
+<td th:text="${s.message}">
+
+</td></tr>
+
+</table>
+</body>
+</html>
